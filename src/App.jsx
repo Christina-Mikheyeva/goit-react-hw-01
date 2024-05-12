@@ -1,6 +1,11 @@
+// Import main
 import './App.css';
+// Components
 import Profile from './components/Profile/Profile';
-import userData from './userData.json';
+import FriendList from './components/FriendList/FriendList';
+// Jason Data
+import userData from './components/JasonData/userData.json';
+import friends from './components/JasonData/friends.json';
 
 const App = () => {
   return (
@@ -12,8 +17,8 @@ const App = () => {
         image={userData.avatar}
         stats={userData.stats}
       />
+      <FriendList friends={friends} />
     </>
   );
 };
-
 export default App;
