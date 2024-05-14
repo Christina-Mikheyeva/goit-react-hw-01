@@ -8,9 +8,9 @@
 
 .item {
   display: flex;
-  justify-content: left;
+  justify-content: center;
   align-items: center;
-  width: 280px;
+  width: calc((100vw - 120px) / 3);
   padding: 10px;
   background-color: #fff;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
