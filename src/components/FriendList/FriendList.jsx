@@ -6,14 +6,14 @@ const FriendList = ({ friends }) => {
       <ul>
         <li>
           {friends.map(({ id, avatar, name, isOnline }) => {
-            return (
+            return friends.length > 0 ? (
               <FriendListItem
                 key={id}
                 avatar={avatar}
                 name={name}
                 status={isOnline}
               />
-            );
+            ) : null;
           })}
         </li>
       </ul>
