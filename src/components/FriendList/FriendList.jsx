@@ -1,17 +1,18 @@
 import FriendListItem from '../FriendListItem/FriendListItem';
+import css from './FriendList.module.css';
 
 const FriendList = ({ friends }) => {
   return (
     <div>
-      <ul>
-        <li>
+      <ul className={css.flex}>
+        <li className={css.flex}>
           {friends.map(({ id, avatar, name, isOnline }) => {
             return friends.length > 0 ? (
               <FriendListItem
                 key={id}
                 avatar={avatar}
                 name={name}
-                status={isOnline}
+                isOnline={isOnline}
               />
             ) : null;
           })}
